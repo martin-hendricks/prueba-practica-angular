@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'parcial' title`, () => {
+  it(`should have the '´Vivero El Otoño' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('parcial');
+    expect(app.title).toEqual('Vivero El Otoño');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, parcial');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Vivero El Otoño');
   });
 });
