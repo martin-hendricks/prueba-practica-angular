@@ -1,0 +1,28 @@
+
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  footer {
+    padding-top: 100px;
+    font-weight: bold;
+  }
+  
+  table {
+    width: 70%;
+    border-collapse: collapse;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+    
+  }
