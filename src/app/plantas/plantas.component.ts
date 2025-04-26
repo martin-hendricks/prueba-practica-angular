@@ -11,12 +11,16 @@ import { CommonModule } from '@angular/common';
 export class PlantasComponent implements OnInit {
 
   plantas: Planta[] = [];
+  plantasInteriores: number = 0;
+  plantasExteriores: number = 0;
   
   constructor(private plantaService: PlantasService) { }
 
   ngOnInit() {
     this.plantaService.getPlantas().subscribe(data => {
       this.plantas = data;
+      this.plantasInteriores = this.plantas.filter(planta => planta.tipo === 'Interior').length;
+      this.plantasExteriores = this.plantas.filter(planta => planta.tipo === 'Exterior').length;
     }
     );
   }
