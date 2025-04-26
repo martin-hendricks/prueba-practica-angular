@@ -4,8 +4,10 @@ import { PlantasComponent } from './plantas.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    PlantasComponent  
   ],
-  declarations: [PlantasComponent]
+  declarations: [],
+  exports: [PlantasComponent]
 })
 export class PlantasModule { }
