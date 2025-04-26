@@ -13,7 +13,10 @@ export class PlantasComponent implements OnInit {
   plantas: Planta[] = [];
   plantasInteriores: number = 0;
   plantasExteriores: number = 0;
-  
+  email: string = 'info@viveroelotonlo.com'
+  numeroCelular: string = '+573102105253'
+  social: string = '@viveroelotonlo'
+
   constructor(private plantaService: PlantasService) { }
 
   ngOnInit() {
