@@ -1,3 +1,19 @@
-<p>
-  plantas works!
-</p>
+<div class="container-fluid">
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Nombre Común</th>
+        <th>Tipo</th>
+        <th>Clima</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let planta of plantas">
+        <td>{{ planta.id }}</td>
+        <td>{{ planta.nombre_comun }}</td>
+        <td>{{ planta.tipo }}</td>
+        <td>{{ planta.clima }}</td>
+      </tr>
+    </tbody>
+  </table>
